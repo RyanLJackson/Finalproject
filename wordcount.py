@@ -3,8 +3,12 @@ Created on Nov 4, 2017
 
 @author: ITAUser
 '''
-f = open('constituton.txt','r')
-text = f.read()
-words = text.split()
-num_words = len(words)
-print(str(num_words))
+file=open("constituton.txt","r+")
+wordcount={}
+for word in file.read().split():
+    if word not in wordcount:
+        wordcount[word] = 1
+    else:
+        wordcount[word] += 1
+for k,v in wordcount.items():
+    print k, v
