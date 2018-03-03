@@ -130,4 +130,4 @@ if __name__ == '__main__':
     while(run):
         showMenu()
         processInput(getInput())
-print Grocery_List
+print (Grocery_List)
