@@ -32,9 +32,7 @@ def cast_float(arg):
         return ValueError
 if value error = False
 print "Not a substancial number"
-# Get user input and check if it is a Integer or Floating number
-# Prompt: the prompt to ask user for input
-# Type: the type of what input type should be, can be either "Integer" or "Float"
+Break:
 def make_sure_type_input(prompt, tyype):
     type_map = {
         'Integer': cast_int,
@@ -119,6 +117,8 @@ def showMenu():
     print(i[0] + "/t" i[1] + "/t" i[2])
 
     print("2. Add a new item to the list")
+Grocery_list.append(item+price)
+
     print("3. Remove an item from the list")
     print("4. Clear the list")
     print("5. Calculate the shopping list")
